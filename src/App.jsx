@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiGithub, FiLinkedin, FiMail, FiCode, FiCpu, FiZap } from 'react-icons/fi';
+import { FiArrowRight, FiGithub, FiLinkedin, FiMail, FiCode, FiCpu, FiZap, FiDownload, FiExternalLink } from 'react-icons/fi';
 import profilePhoto from '../bhanu.jpeg.jpeg';
 
 const currentSkills = [
@@ -27,12 +27,14 @@ const projects = [
     description: 'A personal portfolio website showcasing my journey, skills, and projects with a modern and elegant design.',
     tags: ['React', 'Tailwind CSS', 'Web Design'],
     link: 'https://my-profile-tawny-three.vercel.app/',
+    github: 'https://github.com/mailtobhanupriyan07/my-profile',
   },
   {
     title: 'HealthPulse',
     description: 'A smart wellness dashboard that brings health insights, habit tracking, and AI-powered summaries together in one elegant experience.',
     tags: ['React', 'AI', 'Health Tech'],
     link: 'https://serene-sprinkles-1fc80c.netlify.app/',
+    github: 'https://github.com/mailtobhanupriyan07/healthpulse',
   },
 ];
 
@@ -42,10 +44,17 @@ const achievements = [
   'Focused on solving real-world problems through clean engineering',
 ];
 
+const stats = [
+  { label: 'CGPA', value: '9.53' },
+  { label: 'Hackathons', value: '2+' },
+  { label: 'Projects', value: '2+' },
+  { label: 'DSA Problems', value: '20+(working on it)' },
+];
+
 const education = [
   {
     institution: 'JSS STU Mysore',
-    level: 'Bachelor of Science (3rd Semester)',
+    level: 'Bachelor of Engineering (3rd Semester)',
     score: 'First Sem SGPA: 9.53',
     year: 'Current',
   },
@@ -97,26 +106,29 @@ function App() {
             <div className="relative grid items-center gap-8 lg:grid-cols-[1fr_1fr]">
               <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
                 <p className="mb-4 inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-sm font-medium text-cyan-300">
-                  Crafting the future of intelligent experiences
+                  👋 Hi, I'm Bhanupriya
                 </p>
                 <h1 className="max-w-2xl text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
-                  I build bold digital ideas at the intersection of <span className="bg-gradient-to-r from-violet-400 to-cyan-300 bg-clip-text text-transparent">AI</span>, design, and code.
+                  <span className="bg-gradient-to-r from-violet-400 to-cyan-300 bg-clip-text text-transparent">AI • DSA • Full Stack</span> Developer
                 </h1>
                 <p className="mt-5 max-w-xl text-lg text-slate-300">
-                  I’m Bhanupriya — a Computer Science student who loves turning curiosity into impact through machine learning, DSA, hackathons, and thoughtful product thinking.
+                  Building intelligent products that solve real-world problems. Computer Science student at JSS STU with a passion for AI/ML, hackathons, and creating meaningful digital experiences.
+                </p>
+                <p className="mt-3 text-sm text-violet-300">
+                  I'm an introvert who dreams of becoming a public speaker—and I'm actively working on it! 🎤
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
                   <a href="#projects" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-cyan-400 px-5 py-3 font-semibold text-white transition hover:scale-[1.02]">
-                    Explore Projects <FiArrowRight />
+                    View Projects <FiArrowRight />
                   </a>
-                  <a href="#contact" className="rounded-full border border-white/15 px-5 py-3 font-semibold text-slate-200 transition hover:border-cyan-300/40 hover:text-cyan-300">
-                    Let’s Connect
+                  <a href="mailto:mailtobhanupriyan07@gmail.com" className="rounded-full border border-cyan-300/40 px-5 py-3 font-semibold text-slate-200 transition hover:border-cyan-300/80 hover:text-cyan-300 inline-flex items-center gap-2">
+                    <FiDownload size={18} /> Resume
                   </a>
                 </div>
                 <div className="mt-8 flex gap-4 text-slate-300">
-                  <a href="https://github.com/mailtobhanupriyan07" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 p-3 transition hover:border-cyan-300/40 hover:text-cyan-300"><FiGithub size={18} /></a>
-                  <a href="https://www.linkedin.com/in/bhanupriya-n-678576386?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 p-3 transition hover:border-cyan-300/40 hover:text-cyan-300"><FiLinkedin size={18} /></a>
-                  <a href="mailto:mailtobhanupriyan07@gmail.com" className="rounded-full border border-white/10 p-3 transition hover:border-cyan-300/40 hover:text-cyan-300"><FiMail size={18} /></a>
+                  <a href="https://github.com/mailtobhanupriyan07" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 p-3 transition hover:border-cyan-300/40 hover:text-cyan-300 hover:scale-110" title="GitHub"><FiGithub size={20} /></a>
+                  <a href="https://www.linkedin.com/in/bhanupriya-n-678576386?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 p-3 transition hover:border-cyan-300/40 hover:text-cyan-300 hover:scale-110" title="LinkedIn"><FiLinkedin size={20} /></a>
+                  <a href="mailto:mailtobhanupriyan07@gmail.com" className="rounded-full border border-white/10 p-3 transition hover:border-cyan-300/40 hover:text-cyan-300 hover:scale-110" title="Email"><FiMail size={20} /></a>
                 </div>
               </motion.div>
 
@@ -132,6 +144,14 @@ function App() {
                   </div>
                   <div className="overflow-hidden rounded-[1.4rem] border border-white/10 bg-white/5 p-2">
                     <img src={profilePhoto} alt="Bhanupriya" className="h-[320px] w-full rounded-[1.1rem] object-cover" />
+                  </div>
+                  <div className="mt-4 grid grid-cols-2 gap-2 text-center">
+                    {stats.map((stat) => (
+                      <div key={stat.label} className="rounded-lg border border-cyan-400/20 bg-cyan-400/5 p-2">
+                        <p className="text-lg font-bold text-cyan-300">{stat.value}</p>
+                        <p className="text-xs text-slate-400 uppercase tracking-wide">{stat.label}</p>
+                      </div>
+                    ))}
                   </div>
                   <div className="mt-4 grid gap-3 sm:grid-cols-2">
                     <div>
@@ -206,9 +226,16 @@ function App() {
                     ))}
                   </div>
                   {project.link && (
-                    <a href={project.link} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-500/20 hover:border-cyan-500/40">
-                      Visit Project <FiArrowRight size={16} />
-                    </a>
+                    <div className="mt-6 flex flex-wrap gap-3">
+                      {project.github && (
+                        <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-slate-800 border border-white/10 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-cyan-300/40 hover:text-cyan-300">
+                          <FiGithub size={16} /> GitHub
+                        </a>
+                      )}
+                      <a href={project.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-500/20 hover:border-cyan-500/40">
+                        Live Demo <FiExternalLink size={16} />
+                      </a>
+                    </div>
                   )}
                 </motion.article>
               ))}
