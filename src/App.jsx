@@ -285,8 +285,8 @@ function App() {
             <p className="mt-4 max-w-2xl text-slate-300">
               If you’re looking for a curious builder who enjoys AI, strong engineering fundamentals, and polished product design, feel free to reach out.
             </p>
-            <p className="mt-3 max-w-2xl text-slate-300">
-              If you currently want to build a project and need help turning the idea into something real, feel free to DM me — I’d love to help you build it.
+            <p className="mt-3 max-w-2xl rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 text-slate-200 shadow-[0_0_25px_rgba(34,211,238,0.12)]">
+              ✨ If you currently want to build a project and need help turning the idea into something real, feel free to DM me — I’d love to help you build it.
             </p>
             <a href="mailto:mailtobhanupriyan07@gmail.com?subject=Let's%20Connect&body=Hi%20Bhanupriya" className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 font-semibold text-slate-950 transition hover:scale-[1.02]">
               Say hello <FiArrowRight />
