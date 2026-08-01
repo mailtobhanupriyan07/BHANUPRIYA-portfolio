@@ -114,9 +114,7 @@ function App() {
                 <p className="mt-5 max-w-xl text-lg text-slate-300">
                   Building intelligent products that solve real-world problems. Computer Science student at JSS STU with a passion for AI/ML, hackathons, and creating meaningful digital experiences.
                 </p>
-                <p className="mt-3 text-sm text-violet-300">
-                  I'm an introvert who dreams of becoming a public speaker—and I'm actively working on it! 🎤
-                </p>
+              
                 <div className="mt-8 flex flex-wrap gap-3">
                   <a href="#projects" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-cyan-400 px-5 py-3 font-semibold text-white transition hover:scale-[1.02]">
                     View Projects <FiArrowRight />
