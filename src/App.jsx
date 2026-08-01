@@ -62,13 +62,13 @@ const education = [
     institution: 'BGS Mysore',
     level: 'PU Board (Karnataka)',
     score: '95.33%',
-    year: '2023',
+    year: '2025',
   },
   {
     institution: 'Jawahar Navodaya Vidyalaya',
     level: 'Class 10 (CBSE)',
     score: '93%',
-    year: '2022',
+    year: '2023',
   },
 ];
 
@@ -90,7 +90,7 @@ function App() {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-400">Bhanupriya</p>
-              <p className="text-xs text-slate-500">CS student • AI / ML • DSA</p>
+              <p className="text-xs text-slate-500">CSE student • AI / ML • DSA</p>
             </div>
             <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
               <a href="#about" className="transition hover:text-cyan-300">About</a>
@@ -121,8 +121,8 @@ function App() {
                   <a href="#projects" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-cyan-400 px-5 py-3 font-semibold text-white transition hover:scale-[1.02]">
                     View Projects <FiArrowRight />
                   </a>
-                  <a href="mailto:mailtobhanupriyan07@gmail.com" className="rounded-full border border-cyan-300/40 px-5 py-3 font-semibold text-slate-200 transition hover:border-cyan-300/80 hover:text-cyan-300 inline-flex items-center gap-2">
-                    <FiDownload size={18} /> Resume
+                  <a href="/Bhanupriya_N_Resume_Final.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-5 py-3 font-semibold text-cyan-200 transition hover:scale-[1.02] hover:border-cyan-300/50 hover:bg-cyan-400/20">
+                    View Resume <FiDownload />
                   </a>
                 </div>
                 <div className="mt-8 flex gap-4 text-slate-300">
