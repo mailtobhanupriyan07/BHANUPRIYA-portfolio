@@ -13,8 +13,7 @@ const currentSkills = [
 ];
 
 const interestedSkills = [
-  'AI & ML',
-  'Python',
+  'C++',
   'Data Structures & Algorithms',
   'React',
   'Tailwind CSS',
@@ -40,7 +39,7 @@ const projects = [
 
 const achievements = [
   'Built award-worthy hackathon experiences with polished user interfaces',
-  'Strong interest in AI/ML research and practical implementation',
+  'Strong interest in researching current boom in ai and practical implementation',
   'Focused on solving real-world problems through clean engineering',
 ];
 
@@ -90,7 +89,7 @@ function App() {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-400">Bhanupriya</p>
-              <p className="text-xs text-slate-500">CSE student • AI / ML • DSA</p>
+              <p className="text-xs text-slate-500">CSE student • AI • DSA</p>
             </div>
             <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
               <a href="#about" className="transition hover:text-cyan-300">About</a>
@@ -109,10 +108,10 @@ function App() {
                   👋 Hi, I'm Bhanupriya
                 </p>
                 <h1 className="max-w-2xl text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
-                  <span className="bg-gradient-to-r from-violet-400 to-cyan-300 bg-clip-text text-transparent">AI • DSA • Full Stack</span> Developer
+                  <span className="bg-gradient-to-r from-violet-400 to-cyan-300 bg-clip-text text-transparent">Beginner Software Developer </span>
                 </h1>
                 <p className="mt-5 max-w-xl text-lg text-slate-300">
-                  Building intelligent products that solve real-world problems. Computer Science student at JSS STU with a passion for AI/ML, hackathons, and creating meaningful digital experiences.
+                  Building intelligent products that solve real-world problems. Computer Science student at JSS STU with a passion for learning coding fundamentals, problem solving, hackathons, and creating meaningful digital experiences.
                 </p>
               
                 <div className="mt-8 flex flex-wrap gap-3">
@@ -136,7 +135,7 @@ function App() {
                   <div className="mb-5 flex items-center justify-between">
                     <div>
                       <p className="text-sm text-slate-400">Current focus</p>
-                      <p className="font-semibold text-white">AI-native products</p>
+                      <p className="font-semibold text-white">Integrating AI in my works to make the works easier</p>
                     </div>
                     <div className="rounded-full bg-violet-500/20 p-3 text-violet-300"><FiCpu size={20} /></div>
                   </div>
@@ -244,7 +243,7 @@ function App() {
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Achievements</p>
             <h2 className="mt-2 text-3xl font-bold text-white">Built for hackathons, research, and thoughtful execution.</h2>
             <div className="mt-6 grid gap-4 md:grid-cols-3">
-              {['Hackathon-ready problem solving', 'Creative AI/ML exploration', 'Clean, modern product execution'].map((item) => (
+              {['Hackathon-ready problem solving', 'Creative AI exploration', 'Clean, modern product execution'].map((item) => (
                 <div key={item} className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-5 text-slate-200">
                   {item}
                 </div>
