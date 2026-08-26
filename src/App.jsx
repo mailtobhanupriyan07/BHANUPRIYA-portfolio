@@ -47,7 +47,7 @@ const stats = [
   { label: 'CGPA', value: '9.53' },
   { label: 'Hackathons', value: '2+' },
   { label: 'Projects', value: '2+' },
-  { label: 'DSA Problems', value: '10+(working on it)' },
+  { label: 'Leetcode Problems', value: '20+(working on it)' },
 ];
 
 const education = [
