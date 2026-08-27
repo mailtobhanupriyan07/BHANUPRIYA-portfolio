@@ -43,12 +43,6 @@ const achievements = [
   'Focused on solving real-world problems through clean engineering',
 ];
 
-const stats = [
-  { label: 'CGPA', value: '9.53' },
-  { label: 'Hackathons', value: '2+' },
-  { label: 'Projects', value: '2+' },
-  { label: 'Leetcode Problems', value: '20+(working on it)' },
-];
 
 const education = [
   {
