@@ -43,6 +43,12 @@ const achievements = [
   'Focused on solving real-world problems through clean engineering',
 ];
 
+const stats = [
+  { label: 'Projects', value: '02+' },
+  { label: 'Focus', value: 'current\nupdates' },
+  { label: 'Learning', value: 'DSA' },
+  { label: 'Goal', value: 'Build' },
+];
 
 const education = [
   {
