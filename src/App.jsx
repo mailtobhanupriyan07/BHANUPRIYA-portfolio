@@ -8,6 +8,7 @@ const currentSkills = [
   'HTML',
   'CSS',
   'JavaScript (Basic)',
+  'java',
   'Git & GitHub',
   'AI-Assisted Development (VSCode + Copilot)',
 ];
@@ -16,7 +17,6 @@ const interestedSkills = [
   'C++',
   'Data Structures & Algorithms',
   'React',
-  'Tailwind CSS',
   'Web Development',
 ];
 
@@ -45,7 +45,7 @@ const achievements = [
 
 const stats = [
   { label: 'Projects', value: '02+' },
-  { label: 'Focus', value: 'current\nupdates' },
+  { label: 'Focus', value: 'Current\nupdates' },
   { label: 'Learning', value: 'DSA' },
   { label: 'Goal', value: 'Build' },
 ];
@@ -54,7 +54,7 @@ const education = [
   {
     institution: 'JSS STU Mysore',
     level: 'Bachelor of Engineering (3rd Semester)',
-    score: 'First Sem SGPA: 9.53',
+    score: 'CGPA: 9.37',
     year: 'Current',
   },
   {
